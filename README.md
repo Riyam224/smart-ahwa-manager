@@ -25,6 +25,8 @@ It also applied :
 
 flowchart 
 
+```mermaid
+flowchart TD
 User[👤 User fills form: name, drink, notes] --> UI[🖥️ OrderPage UI]
 UI --> OrderObj[📦 Create Order object]
 OrderObj --> OrderService[⚙️ OrderService.addOrder()]
@@ -35,7 +37,6 @@ OrdersList --> Dashboard[📊 Dashboard updates Pending/Completed counts]
 UI --> ReportBtn[📌 User taps Daily Report button]
 ReportBtn --> ReportService[📊 ReportService generates report]
 ReportService --> ReportDialog[📑 Show Daily Report: total + top drinks]
-
 
  ---
 
