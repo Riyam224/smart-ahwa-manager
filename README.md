@@ -132,8 +132,5 @@ cd smart-ahwa-manager
 flutter pub get
 flutter run
 
-
-
-
 ⸻
 
