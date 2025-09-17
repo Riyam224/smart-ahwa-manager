@@ -1,4 +1,3 @@
-
 import 'package:ahwa_manager_app/models/drink.dart';
 import 'package:ahwa_manager_app/models/order.dart';
 import 'package:ahwa_manager_app/services/order_service.dart';
@@ -39,9 +38,7 @@ class _OrderPageState extends State<OrderPage> {
   @override
   Widget build(BuildContext context) {
     final pending = _orderService.pendingOrders;
-    final completed = _orderService.allOrders
-        .where((o) => o.isCompleted)
-        .toList();
+    final completed = _orderService.completedOrders;
 
     return DefaultTabController(
       length: 2,
@@ -73,8 +70,8 @@ class _OrderPageState extends State<OrderPage> {
           ],
           bottom: const TabBar(
             indicatorColor: Colors.white,
-            labelColor: Colors.white, // active tab
-            unselectedLabelColor: Colors.white70, // inactive tab
+            labelColor: Colors.white,
+            unselectedLabelColor: Colors.white70,
             tabs: [
               Tab(text: 'Pending 🟡'),
               Tab(text: 'Completed ✅'),
@@ -85,7 +82,7 @@ class _OrderPageState extends State<OrderPage> {
           padding: const EdgeInsets.all(16),
           child: Column(
             children: [
-              // --- Dashboard Summary ---
+              // Dashboard
               Card(
                 color: Colors.brown.shade50,
                 shape: RoundedRectangleBorder(
@@ -117,7 +114,7 @@ class _OrderPageState extends State<OrderPage> {
               ),
               const SizedBox(height: 16),
 
-              // --- Form ---
+              // Form
               TextField(
                 controller: _nameController,
                 decoration: const InputDecoration(labelText: 'Customer Name'),
@@ -167,12 +164,12 @@ class _OrderPageState extends State<OrderPage> {
               ),
               const Divider(),
 
-              // --- Pending/Completed Tabs ---
+              // Tab View (Pending + Completed)
               Expanded(
                 child: TabBarView(
                   children: [
-                    _buildOrderList(pending, false), // Pending
-                    _buildOrderList(completed, true), // Completed
+                    _buildOrderList(pending, false),
+                    _buildOrderList(completed, true),
                   ],
                 ),
               ),
@@ -216,10 +213,7 @@ class _OrderPageState extends State<OrderPage> {
               'Price: \$${order.drink.price}\nNotes: ${order.specialInstructions ?? "no"}',
             ),
             trailing: completed
-                ? const Icon(
-                    Icons.check,
-                    color: Colors.green,
-                  ) // already completed
+                ? const Icon(Icons.check, color: Colors.green)
                 : IconButton(
                     icon: const Icon(Icons.check, color: Colors.green),
                     onPressed: () {

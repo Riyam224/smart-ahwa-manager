@@ -7,13 +7,13 @@ class Order {
   final String? specialInstructions;
   bool _isCompleted = false;
 
-  get isCompleted => _isCompleted;
   Order({
     required this.id,
     required this.customerName,
     required this.drink,
     this.specialInstructions,
   });
+  bool get isCompleted => _isCompleted;
 
   void markItCompleted() {
     _isCompleted = true;

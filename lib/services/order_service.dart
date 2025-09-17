@@ -12,6 +12,9 @@ class OrderService {
     return _orders.where((o) => !o.isCompleted).toList();
   }
 
+  List<Order> get completedOrders =>
+      _orders.where((o) => o.isCompleted).toList();
+
   void markCompleted(Order order) {
     order.markItCompleted();
   }
