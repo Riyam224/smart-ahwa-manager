@@ -1,33 +1,46 @@
-# ☕ Smart Ahwa Manager
+📝 User Story
 
-A Flutter app for managers of a traditional Cairo Ahwa (coffee shop).
-Instead of scribbled notes and confusion, this app helps the manager track all drink orders, see pending vs. completed ones, and generate daily sales insights.
+As a professional Ahwa owner in Cairo, I want a Smart Ahwa Manager app to:
+	•	Add and manage customer drink orders
+	•	Track pending vs. completed ones
+	•	Generate daily sales reports (total orders + top-selling drinks)
 
-This project also demonstrates OOP concepts and SOLID principles in Flutter with clean, modular code.practical way.  
+So that I can streamline operations and optimize my business.
+
+⸻
+
+🎯 Project Idea
+
+Running an Ahwa can be messy and inefficient:
+	•	Waiters take notes on paper that often get lost
+	•	It’s hard to track which orders are pending vs. completed
+	•	Managers lack visibility into the best-selling drinks of the day
+
+Smart Ahwa Manager solves this by providing a simple digital dashboard where managers can:
+	•	📋 Record and monitor all drink orders
+	•	📊 Track pending vs. completed orders in real time
+	•	📌 Generate daily sales reports with totals and top-selling drinks
+
+This project also demonstrates:
+	•	Clean code structure
+	•	OOP principles (Encapsulation, Inheritance, Polymorphism, Abstraction)
+	•	SOLID design principles
+
+⸻
+
+🔄 Workflow (Manager’s Perspective)
+	1.	👤 A customer places a drink order with the waiter
+	2.	🖥️ The manager records the order in the app (customer name, drink, special notes)
+	3.	📋 The order is added to the Pending Orders list
+	4.	📊 The dashboard updates live with Pending, Completed, and Total counts
+	5.	✅ Once served, the manager (or staff) marks the order as Completed
+	6.	📌 At the end of the day, the manager generates a Daily Report, showing:
+	•	Total number of orders
+	•	Top-selling drinks
 
 ---
 
-## 🎯 Project Idea
-
-Managing an Ahwa is often messy:
-	•	Waiters take notes on paper that get lost.
-	•	It’s hard to know which orders are pending vs. completed.
-	•	Managers don’t know which drink sells the most in a day.
-
-This app solves that by giving the manager a clear dashboard to:
-	•	Monitor all customer drink orders
-	•	Track pending vs. completed orders in real time
-	•	Generate daily reports of total sales and top-selling drinks
-
-It also applies:
-
-- Clean code structure  
-- OOP principles (Encapsulation, Inheritance, Polymorphism, Abstraction)  
-- SOLID design principles  
-
----
-
-## 🔄 Workflow (Manager’s Perspective)
+🔄 Workflow (Manager’s Perspective)
 	1.	👤 A customer places a drink order with the waiter.
 	2.	🖥️ The manager (using the app) records the order (name, drink, special notes).
 	3.	📋 The order is stored in the Pending Orders list.
@@ -39,7 +52,7 @@ It also applies:
 
  ---
 
-## 📸 Screenshots
+📸 Screenshots
 
 ### 🏠 Home Screen  
 
@@ -64,7 +77,7 @@ lib/
  │   └── order_view.dart
  └── main.dart
 
-## 📌 Features
+📌 Features
 
 - ➕ Add new orders with:
   - Customer name  
@@ -78,7 +91,7 @@ lib/
 
 ---
 
-## 🏗 Architecture & Flow
+🏗 Architecture & Flow
 
 The app follows a simple **MVC-like separation**:
 
@@ -92,7 +105,7 @@ Models (Drink, Order)
 
 ---
 
-## 🔑 SOLID Principles Applied
+🔑 SOLID Principles Applied
 
 - **S – Single Responsibility Principle (SRP):**  
   - `OrderService` only manages orders  
@@ -112,7 +125,7 @@ Models (Drink, Order)
 
 ---
 
-## 🛠 Object-Oriented Concepts Used
+🛠 Object-Oriented Concepts Used
 
 - **Encapsulation** → `_isCompleted` is private and exposed via getter/setter  
 - **Inheritance** → `Drink` is extended by `Coffee`, `GreenTea`, `HibiscusTea`  
