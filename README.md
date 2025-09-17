@@ -1,4 +1,4 @@
-📝 User Story
+# ☕🍵 Smart Ahwa Manager 🍵☕
 
 As a professional Ahwa owner in Cairo, I want a Smart Ahwa Manager app to:
 	•	Add and manage customer drink orders
@@ -9,7 +9,7 @@ So that I can streamline operations and optimize my business.
 
 ⸻
 
-🎯 Project Idea
+## 🎯 Project Idea
 
 Running an Ahwa can be messy and inefficient:
 	•	Waiters take notes on paper that often get lost
@@ -28,7 +28,7 @@ This project also demonstrates:
 
 ⸻
 
-🔄 Workflow (Manager’s Perspective)
+## 🔄 Workflow (Manager’s Perspective)
 	1.	👤 A customer places a drink order with the waiter
 	2.	🖥️ The manager records the order in the app (customer name, drink, special notes)
 	3.	📋 The order is added to the Pending Orders list
@@ -40,7 +40,7 @@ This project also demonstrates:
 
 ---
 
-🔄 Workflow (Manager’s Perspective)
+## 🔄 Workflow (Manager’s Perspective)
 	1.	👤 A customer places a drink order with the waiter.
 	2.	🖥️ The manager (using the app) records the order (name, drink, special notes).
 	3.	📋 The order is stored in the Pending Orders list.
@@ -52,7 +52,7 @@ This project also demonstrates:
 
  ---
 
-📸 Screenshots
+## 📸 Screenshots
 
 ### 🏠 Home Screen  
 
@@ -64,7 +64,7 @@ This project also demonstrates:
 
 ---
 
-📂 Project Structure
+## 📂 Project Structure
 
 lib/
  ├── models/
@@ -77,7 +77,7 @@ lib/
  │   └── order_view.dart
  └── main.dart
 
-📌 Features
+## 📌 Features
 
 - ➕ Add new orders with:
   - Customer name  
@@ -91,7 +91,7 @@ lib/
 
 ---
 
-🏗 Architecture & Flow
+## 🏗 Architecture & Flow
 
 The app follows a simple **MVC-like separation**:
 
@@ -105,7 +105,7 @@ Models (Drink, Order)
 
 ---
 
-🔑 SOLID Principles Applied
+## 🔑 SOLID Principles Applied
 
 - **S – Single Responsibility Principle (SRP):**  
   - `OrderService` only manages orders  
@@ -125,7 +125,7 @@ Models (Drink, Order)
 
 ---
 
-🛠 Object-Oriented Concepts Used
+## 🛠 Object-Oriented Concepts Used
 
 - **Encapsulation** → `_isCompleted` is private and exposed via getter/setter  
 - **Inheritance** → `Drink` is extended by `Coffee`, `GreenTea`, `HibiscusTea`  
