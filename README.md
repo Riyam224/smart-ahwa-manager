@@ -1,17 +1,23 @@
 # ☕ Smart Ahwa Manager
 
-A Flutter app for managing customer drink orders in a traditional Cairo *Ahwa* (coffee shop).  
-This project demonstrates **OOP concepts** and **SOLID principles** in a clean and practical way.  
+A Flutter app for managers of a traditional Cairo Ahwa (coffee shop).
+Instead of scribbled notes and confusion, this app helps the manager track all drink orders, see pending vs. completed ones, and generate daily sales insights.
+
+This project also demonstrates OOP concepts and SOLID principles in Flutter with clean, modular code.practical way.  
 
 ---
 
 ## 🎯 Project Idea
 
-The goal of this project is to **streamline coffee shop operations**:
+Managing an Ahwa is often messy:
+	•	Waiters take notes on paper that get lost.
+	•	It’s hard to know which orders are pending vs. completed.
+	•	Managers don’t know which drink sells the most in a day.
 
-- Add and track customer orders  
-- Mark them as completed  
-- Generate daily reports for insights (e.g., top-selling drinks)  
+This app solves that by giving the manager a clear dashboard to:
+	•	Monitor all customer drink orders
+	•	Track pending vs. completed orders in real time
+	•	Generate daily reports of total sales and top-selling drinks
 
 It also applies:
 
@@ -21,14 +27,15 @@ It also applies:
 
 ---
 
-## 🔄 How It Works (Flow)
-
-1. 👤 User fills the form (name, drink, notes)  
-2. 🖥️ `OrderPage` (UI) creates an **Order object**  
-3. ⚙️ `OrderService` stores it in the orders list  
-4. 📊 Dashboard updates with pending/completed counts  
-5. 📌 User taps **Daily Report** → `ReportService` generates stats  
-6. 📑 Report dialog shows **total orders + top-selling drink**  
+## 🔄 Workflow (Manager’s Perspective)
+	1.	👤 A customer places a drink order with the waiter.
+	2.	🖥️ The manager (using the app) records the order (name, drink, special notes).
+	3.	📋 The order is stored in the Pending Orders list.
+	4.	📊 The dashboard updates live (Pending, Completed, Total orders).
+	5.	✅ Once served, the manager (or staff) marks the order as Completed.
+	6.	📌 At the end of the day, the manager taps Daily Report to see:
+	•	Total number of orders
+	•	The most popular (top-selling) drinks
 
  ---
 
