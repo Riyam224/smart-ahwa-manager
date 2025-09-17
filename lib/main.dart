@@ -2,11 +2,11 @@ import 'package:ahwa_manager_app/pages/order_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const AhwaApp());
+  runApp(const SmartAhwaManager());
 }
 
-class AhwaApp extends StatelessWidget {
-  const AhwaApp({super.key});
+class SmartAhwaManager extends StatelessWidget {
+  const SmartAhwaManager({super.key});
 
   @override
   Widget build(BuildContext context) {
