@@ -38,7 +38,7 @@ This project also demonstrates clean code practices, applying OOP principles (En
 ---
 
 
-## 📸 Screenshots
+## 📸 Screenshots and 🎥 Demo
 
 ### 🏠 Home Screen  
 
@@ -48,6 +48,8 @@ This project also demonstrates clean code practices, applying OOP principles (En
 
 <img src="screenshots/daily_report.png" width="300" />
 
+
+![App Demo](screenshots/demo.gif)
 ---
 
 ## 📂 Project Structure
