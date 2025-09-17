@@ -5,8 +5,8 @@ class Order {
   final String customerName;
   final Drink drink;
   final String? specialInstructions;
-
   bool _isCompleted = false;
+
   get isCompleted => _isCompleted;
   Order({
     required this.id,
