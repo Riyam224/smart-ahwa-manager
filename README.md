@@ -1,7 +1,4 @@
-Got it ✅
-Here’s a complete polished README.md for your project, including screenshots, flow explanation, and clear structure (based on your mentor’s advice + what you asked for):
 
-⸻
 
 # ☕ Smart Ahwa Manager
 
@@ -18,7 +15,7 @@ The goal of this project is to **streamline coffee shop operations**:
 - Mark them as completed
 - Generate daily reports for insights (e.g., top-selling drinks)
 
-It also applies :
+It also applied :
 
 - Clean code structure
 - OOP principles (Encapsulation, Inheritance, Polymorphism, Abstraction)
