@@ -1,11 +1,12 @@
 # ☕🍵 Smart Ahwa Manager 🍵☕
 
-As a professional Ahwa owner in Cairo, I want a Smart Ahwa Manager app to:
+This app was designed for Ahwa (traditional Cairo coffee shop) owners and managers.
+The goal is to help them:
 	•	Add and manage customer drink orders
 	•	Track pending vs. completed ones
 	•	Generate daily sales reports (total orders + top-selling drinks)
 
-So that I can streamline operations and optimize my business.
+So they can streamline operations and optimize their business.
 
 ⸻
 
@@ -21,36 +22,21 @@ Smart Ahwa Manager solves this by providing a simple digital dashboard where man
 	•	📊 Track pending vs. completed orders in real time
 	•	📌 Generate daily sales reports with totals and top-selling drinks
 
-This project also demonstrates:
-	•	Clean code structure
-	•	OOP principles (Encapsulation, Inheritance, Polymorphism, Abstraction)
-	•	SOLID design principles
+This project also demonstrates clean code practices, applying OOP principles (Encapsulation, Inheritance, Polymorphism, Abstraction) and SOLID design principles in Flutter.
 
 ⸻
 
-## 🔄 Workflow (Manager’s Perspective)
-	1.	👤 A customer places a drink order with the waiter
-	2.	🖥️ The manager records the order in the app (customer name, drink, special notes)
-	3.	📋 The order is added to the Pending Orders list
-	4.	📊 The dashboard updates live with Pending, Completed, and Total counts
-	5.	✅ Once served, the manager (or staff) marks the order as Completed
-	6.	📌 At the end of the day, the manager generates a Daily Report, showing:
+## 🔄 Workflow 
+	1.	👤 A customer places a drink order with the waiter.
+	2.	🖥️ The manager or staff records the order in the app (customer name, drink, special notes).
+	3.	📋 The order is added to the Pending Orders list.
+	4.	📊 The dashboard updates live with counts for Pending, Completed, and Total orders.
+	5.	✅ Once served, the manager (or staff) marks the order as Completed.
+	6.	📌 At the end of the day, the manager generates a Daily Report, which shows:
 	•	Total number of orders
 	•	Top-selling drinks
-
 ---
 
-## 🔄 Workflow (Manager’s Perspective)
-	1.	👤 A customer places a drink order with the waiter.
-	2.	🖥️ The manager (using the app) records the order (name, drink, special notes).
-	3.	📋 The order is stored in the Pending Orders list.
-	4.	📊 The dashboard updates live (Pending, Completed, Total orders).
-	5.	✅ Once served, the manager (or staff) marks the order as Completed.
-	6.	📌 At the end of the day, the manager taps Daily Report to see:
-	•	Total number of orders
-	•	The most popular (top-selling) drinks
-
- ---
 
 ## 📸 Screenshots
 
@@ -79,15 +65,15 @@ lib/
 
 ## 📌 Features
 
-- ➕ Add new orders with:
-  - Customer name  
-  - Drink type (Coffee, Green Tea, Hibiscus Tea, etc.)  
-  - Special instructions  
-- ✅ Mark orders as **completed**  
-- 📊 Dashboard showing **pending, completed, and total orders**  
-- 📝 Generate a **daily report** with:
-  - Total number of orders  
-  - Top-selling drinks  
+	•	➕ Add new orders with:
+	•	Customer name
+	•	Drink type (e.g., Coffee, Green Tea, Hibiscus Tea)
+	•	Special instructions (e.g., extra mint)
+	•	✅ Mark orders as completed
+	•	📊 Dashboard showing pending, completed, and total orders
+	•	📝 Daily report with:
+	•	Total number of orders
+	•	Top-selling drinks
 
 ---
 
