@@ -18,7 +18,7 @@ The goal of this project is to **streamline coffee shop operations**:
 - Mark them as completed
 - Generate daily reports for insights (e.g., top-selling drinks)
 
-It also serves as a **learning project** to apply:
+It also applies :
 
 - Clean code structure
 - OOP principles (Encapsulation, Inheritance, Polymorphism, Abstraction)
