@@ -1,5 +1,3 @@
-
-
 # ☕ Smart Ahwa Manager
 
 A Flutter app for managing customer drink orders in a traditional Cairo *Ahwa* (coffee shop).  
@@ -11,32 +9,26 @@ This project demonstrates **OOP concepts** and **SOLID principles** in a clean a
 
 The goal of this project is to **streamline coffee shop operations**:
 
-- Add and track customer orders
-- Mark them as completed
-- Generate daily reports for insights (e.g., top-selling drinks)
+- Add and track customer orders  
+- Mark them as completed  
+- Generate daily reports for insights (e.g., top-selling drinks)  
 
-It also applied :
+It also applies:
 
-- Clean code structure
-- OOP principles (Encapsulation, Inheritance, Polymorphism, Abstraction)
+- Clean code structure  
+- OOP principles (Encapsulation, Inheritance, Polymorphism, Abstraction)  
 - SOLID design principles  
 
 ---
 
-flowchart 
+## 🔄 How It Works (Flow)
 
-```mermaid
-flowchart TD
-User[👤 User fills form: name, drink, notes] --> UI[🖥️ OrderPage UI]
-UI --> OrderObj[📦 Create Order object]
-OrderObj --> OrderService[⚙️ OrderService.addOrder()]
-OrderService --> OrdersList[📋 Stored in pending orders list]
-
-OrdersList --> Dashboard[📊 Dashboard updates Pending/Completed counts]
-
-UI --> ReportBtn[📌 User taps Daily Report button]
-ReportBtn --> ReportService[📊 ReportService generates report]
-ReportService --> ReportDialog[📑 Show Daily Report: total + top drinks]
+1. 👤 User fills the form (name, drink, notes)  
+2. 🖥️ `OrderPage` (UI) creates an **Order object**  
+3. ⚙️ `OrderService` stores it in the orders list  
+4. 📊 Dashboard updates with pending/completed counts  
+5. 📌 User taps **Daily Report** → `ReportService` generates stats  
+6. 📑 Report dialog shows **total orders + top-selling drink**  
 
  ---
 
