@@ -23,6 +23,38 @@ It also applied :
 
 ---
 
+
+flowchart TD
+    subgraph UI[☕ UI Layer - order_view.dart]
+        A1[User enters name & selects drink]
+        A2[Clicks "Add Order"]
+        A3[Pending & Completed Orders list updates]
+        A4[Daily Report button clicked]
+    end
+
+    subgraph Services[⚙️ Services Layer]
+        B1[OrderService - manages orders]
+        B2[ReportService - generates reports]
+    end
+
+    subgraph Models[📦 Models Layer]
+        C1[Drink (abstract)]
+        C2[Coffee, Tea, HotChocolate...]
+        C3[Order]
+    end
+
+    %% Connections
+    A1 --> A2 --> B1
+    B1 --> C3
+    C3 --> C1
+    C1 --> C2
+    B1 --> A3
+    A4 --> B2
+    B2 --> C3
+    B2 --> A4
+
+ ---
+
 ## 📸 Screenshots
 
 ### 🏠 Home Screen  
